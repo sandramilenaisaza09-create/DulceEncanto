@@ -1,0 +1,131 @@
+:root {
+    --pastel-pink: #FFD6E8;
+    --pastel-blue: #C4E4FF;
+    --pastel-purple: #E5D4FF;
+    --pastel-yellow: #FFF4C4;
+    --pastel-peach: #FFE4D6;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(135deg, var(--pastel-pink) 0%, var(--pastel-blue) 100%);
+    min-height: 100vh;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    font-family: 'Satisfy', cursive;
+    color: #FF69B4;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    font-family: 'Satisfy', cursive;
+    color: #FF69B4;
+    font-size: 2.5rem;
+    margin: 3rem 0 2rem 0;
+    text-align: center;
+}
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-img {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-peach));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.product-title {
+    font-size: 2rem;
+    color: #FF1493;
+    margin-bottom: 0.5rem;
+}
+
+.product-description {
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.order-section {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    padding: 3rem;
+    margin: 3rem auto;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.form-label {
+    font-size: 1.5rem;
+    color: #FF69B4;
+    font-weight: 700;
+}
+
+.form-control, .form-select {
+    border-radius: 15px;
+    border: 2px solid var(--pastel-pink);
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #FF69B4;
+    box-shadow: 0 0 0 0.2rem rgba(255, 105, 180, 0.25);
+}
+
+.btn-order {
+    background: linear-gradient(135deg, #FF69B4, #FF1493);
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(255, 20, 147, 0.4);
+}
+
+.btn-order:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 20, 147, 0.6);
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #666;
+}
